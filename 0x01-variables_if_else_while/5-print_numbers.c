@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - this program  that prints all single digit numbers
  * Return: always 0
