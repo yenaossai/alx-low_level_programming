@@ -2,7 +2,7 @@
 
 
 /**
-  * print_times_table - printsthe times inputed
+  * print_times_table - prints the times inputed
   * starting with 0.
   *@n: the value of the timea table printed
   */
@@ -41,7 +41,6 @@ void print_times_table(int n)
 	_putchar((prod % 10) + '0');
 	}
 	_putchar('\n');
-	}
 	}
 }
 
