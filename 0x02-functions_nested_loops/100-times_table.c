@@ -6,10 +6,10 @@
   */
 
 
-void print_times_table(int n)
+void print_times_table(int n);
 {
 
-
+}
 	int num, mult, prod;
 
 
@@ -41,5 +41,5 @@ void print_times_table(int n)
 	_putchar('\n');
 	}
 	}
-}
+
 
