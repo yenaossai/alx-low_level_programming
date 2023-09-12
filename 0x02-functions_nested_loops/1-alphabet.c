@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * pints_alphabet - this is the function of the task
- * Description: function that prints the alphabet in lowercase
+ * print_alphabet - this is the function of the task
  * Return: return 0
  */
+
 void print_alphabet(void)
 {
+
 char x;
 for (x = 'a'; x <= 'z'; x++)
 {
