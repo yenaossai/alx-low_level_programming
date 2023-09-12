@@ -1,25 +1,29 @@
 #include <stdio.h>
+
+
 /**
   * main - the main printing funtion
-  * less than 4000000
-  * Return: 0
+  * less than 4000000.
+  * Return: 0.
   */
+
+
 int main(void)
 {
-int limit = 4000000;
-int a = 1, b = 2, next_term = 0;
-long long even_sum = 0;
-while (a <= limit)
-{
-if (a % 2 == 0)
-{
-even_sum += a;
+	int i = 0;
+	long j = 1, k = 2, sum = k;
+
+
+	while (k + j < 4000000)
+	{
+		k += j;
+		if (k % 2 == 0)
+		sum += k;
+		j = k - j;
+		++i;
+	}
+	printf("%ld", sum);
+	return (0);
 }
-next_term = a + b;
-a = b;
-b = next_term;
-}
-printf("%lld\n", even_sum);
-return (0);
-}
+
 
