@@ -1,0 +1,145 @@
+er@MACs-MacBook-Pro ~ % vagrant up
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Checking if box 'ubuntu/focal64' version '20230823.0.0' is up to date...
+==> default: A newer version of the box 'ubuntu/focal64' for provider 'virtualbox' is
+==> default: available! You currently have version '20230823.0.0'. The latest is version
+==> default: '20230908.0.0'. Run `vagrant box update` to update.
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+==> default: Machine booted and ready!
+[default] A Virtualbox Guest Additions installation was found but no tools to rebuild or start them.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.8ubuntu1.1).
+dkms is already the newest version (2.8.1-5ubuntu2).
+linux-headers-5.4.0-156-generic is already the newest version (5.4.0-156.173).
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ build-essential : Depends: libc6-dev but it is not going to be installed or
+                            libc-dev
+ g++ : Depends: gcc-9 (>= 9.3.0-3~) but it is not going to be installed
+ g++-9 : Depends: gcc-9 (= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+ gcc : Depends: gcc-9 (>= 9.3.0-3~) but it is not going to be installed
+       Recommends: libc6-dev but it is not going to be installed or
+                   libc-dev
+ libgcc-9-dev : Depends: libasan5 (>= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+                Depends: libtsan0 (>= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+                Recommends: libc6-dev (>= 2.13-0ubuntu6) but it is not going to be installed
+ libstdc++-9-dev : Depends: libc6-dev (>= 2.13-0ubuntu6) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2434 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [2821 kB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [381 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [13.1 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2173 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [465 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [465 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2287 kB]
+Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [304 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [879 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [320 kB]
+Get:16 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [184 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [19.1 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1110 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [265 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [25.5 kB]
+Fetched 14.0 MB in 32s (431 kB/s)
+Reading package lists...
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.8ubuntu1.1).
+dkms is already the newest version (2.8.1-5ubuntu2).
+linux-headers-5.4.0-156-generic is already the newest version (5.4.0-156.173).
+You might want to run 'apt --fix-broken install' to correct these.
+The following packages have unmet dependencies:
+ build-essential : Depends: libc6-dev but it is not going to be installed or
+                            libc-dev
+ g++ : Depends: gcc-9 (>= 9.3.0-3~) but it is not going to be installed
+ g++-9 : Depends: gcc-9 (= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+ gcc : Depends: gcc-9 (>= 9.3.0-3~) but it is not going to be installed
+       Recommends: libc6-dev but it is not going to be installed or
+                   libc-dev
+ libgcc-9-dev : Depends: libasan5 (>= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+                Depends: libtsan0 (>= 9.4.0-1ubuntu1~20.04.2) but it is not going to be installed
+                Recommends: libc6-dev (>= 2.13-0ubuntu6) but it is not going to be installed
+ libstdc++-9-dev : Depends: libc6-dev (>= 2.13-0ubuntu6) but it is not going to be installed
+E: Unmet dependencies. Try 'apt --fix-broken install' with no packages (or specify a solution).
+Unmounting Virtualbox Guest Additions ISO from: /mnt
+umount: /mnt: not mounted.
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 6.1.38_Ubuntu r153438
+    default: VirtualBox Version: 7.0
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+umount /mnt
+
+Stdout from the command:
+
+
+
+Stderr from the command:
+
+umount: /mnt: not mounted.
+
+user@MACs-MacBook-Pro ~ % vagrant ssh
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-156-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ System information disabled due to load higher than 2.0
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+8 updates can be applied immediately.
+8 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Fri Sep  8 13:34:23 2023 from 10.0.2.2
+vagrant@ubuntu-focal:~$ cd alx-low_level_programming
+vagrant@ubuntu-focal:~/alx-low_level_programming$ mkdir 0x02-functions_nested_loops
+vagrant@ubuntu-focal:~/alx-low_level_programming$ cd 0x02-functions_nested_loops
+vagrant@ubuntu-focal:~/alx-low_level_programming/0x02-functions_nested_loops$ echo 'readme for nested loops' > README.md
+vagrant@ubuntu-focal:~/alx-low_level_programming/0x02-functions_nested_loops$ vi 
+
