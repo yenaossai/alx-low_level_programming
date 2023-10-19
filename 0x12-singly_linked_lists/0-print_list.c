@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include "lists.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
  * main - prints all the elements of a list_t list.
@@ -16,7 +14,7 @@ while (h)
 {
 if (h->str == NULL)
 {
- printf("[0] (nil)\n");
+printf("[0] (nil)\n");
 }
 else
 {
