@@ -8,29 +8,28 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t nodes, index = 0;
+	size_t num = 0;
+	const listint_t *current = head;
+	const listint_t *check;
 
-	nodes = looped_listint_len(head);
-
-	if (nodes == 0)
+	while (current)
 	{
-		for (; head != NULL; nodes++)
+		num++;
+		printf("[%p} %d\n", (void *)current, current->n);
+
+		check = head;
+		for (size_t i = 0; i < num; i++)
 		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
+			if (check == current)
+			{
+				printf("-> [%p] 5d\n", (void *)current, current->n);
+				exit(98);
+			}
+			check = check->next;
 		}
+		current = current->next;
 	}
 
-	else
-	{
-		for (index = 0; index < nodes; index++)
-		{
-			printf("[%p] %d\n", (void *)head, head->n);
-			head = head->next;
-		}
+	return (num);
 
-		printf("-> [%p] %d\n", (void *)head, head->n);
-	}
-
-	return (nodes);
 }
