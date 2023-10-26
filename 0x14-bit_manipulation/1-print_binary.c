@@ -1,34 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
-/**
- * _putchar - putchar function
- * @c: the character to print
- * Return: 1 (success), -1 (on error)
- */
-
-int _putchar(char c)
-{
-	return write(1, &c, 1);
-}
-
-/**
- * _pow - func calculates base^power
- * @base: base of the func
- * @power: power of the func
- * Return: value of the func
- */
-
-unsigned long int _pow(unsigned int base, unsigned int power)
-{
-	unsigned long int num;
-	unsigned int a;
-
-	num = 1;
-	for (a = 1; a <= power; a++)
-		num *= base;
-	return (num);
-}
 
 /**
  * main - prints the binary representation of a number
@@ -36,25 +6,33 @@ unsigned long int _pow(unsigned int base, unsigned int power)
  * Return: void
  */
 
-void print_binary_helper(unsigned long int n)
+void print_binary(unsigned long int n)
 {
-	unsigned long int divisor, check;
-	char flag;
+	int binary[64];
+	int i;
 
-	flag = 0;
-	divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
-	while (divisor != 0)
+	for (i = 0; i < 64; i++)
 	{
-		check = n & divisor;
-		if (check == divisor)
-		{
-			flag = 1;
-			_putchar('1');
-		}
-		else if (flag == 1 || divisor == 1)
-		{
-			_putchar('0');
-		}
-		divisor >>= 1;
+		binary[i] = 0;
+	}
+
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+
+	i = 0;
+
+	while (n > 0)
+	{
+		binary[i] = n & 1;
+		n >>= 1;
+		i++;
+	}
+
+	for (i = 63; i >= 0; i--)
+	{
+		_putchar(binary[i] + '0');
 	}
 }
