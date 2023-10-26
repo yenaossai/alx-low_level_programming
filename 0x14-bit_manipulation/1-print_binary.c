@@ -19,7 +19,7 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 }
 
 /**
- * print_binary - prints the binary representation of a number
+ * main - prints the binary representation of a number
  * @n: number to print
  * Return: void
  */
