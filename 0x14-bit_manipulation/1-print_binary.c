@@ -1,4 +1,16 @@
 #include "main.h"
+#include <stdio.h>
+
+/**
+ * _putchar - putchar function
+ * @c: the character to print
+ * Return: 1 (success), -1 (on error)
+ */
+
+int _putchar(char c)
+{
+	return write(1, &c, 1);
+}
 
 /**
  * _pow - func calculates base^power
