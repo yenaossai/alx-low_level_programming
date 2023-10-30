@@ -60,7 +60,7 @@ void check_IO_stat(int stat, int fd, char *filename, char mode)
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
-	else if (mode == '0' && stst == -1)
+	else if (mode == '0' && stat == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
